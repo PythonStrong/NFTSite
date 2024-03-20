@@ -1,0 +1,42 @@
+body {
+  background-color: #0f0b33 !important;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.link {
+  text-decoration: none !important;
+  padding: 0 10px;
+  margin: 0 20px;
+  position: relative;
+}
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 4px;
+  background: #1e4ffbff;
+}
+.link:hover::before {
+  width: 100%;
+}
+.card .img {
+  transition: all 0.3s ease-in-out !important;
+}
+.card:hover {
+  .btn {
+    display: flex;
+    transition: all 0.5s ease-in-out !important;
+  }
+  .img {
+    filter: blur(6px);
+  }
+}
+.main {
+  background: linear-gradient(
+    to right,
+    rgba(106, 105, 105, 0.444),
+    rgba(0, 0, 0, 0.121)
+  );
+}
